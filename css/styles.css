@@ -8,15 +8,19 @@
   --sub-title: #555555;
   --up-title: #9da4bd;
   --text-dark: #9da4bd;
+  --second-color-text: #ff6c00;
+  --secondary-family-text: "Raleway";
 }
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body {
-  width: 1170px;
   background-color: var(--main-bg);
   font-family: "Open Sans", sans-serif;
+  /*system-ui, -apple-system, "Segoe UI", "Roboto", "Helvetica",
+    "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",*/
   line-height: normal;
   word-wrap: break-word;
 }
@@ -25,11 +29,21 @@ ul {
 }
 a {
   text-decoration: none;
+  color: inherit;
 }
 h1,
 h2,
 h3 {
   margin: 0;
+}
+img {
+  display: block;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 .visually-hidden {
   position: absolute;
@@ -56,6 +70,7 @@ h3 {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1.08px;
+  font-style: normal;
 }
 .btn:hover,
 .btn:focus {
@@ -65,7 +80,7 @@ h3 {
 .title {
   color: var(--title-light);
   font-size: 42px;
-  font-family: Raleway;
+  font-family: var(--secondary-family-text);
   font-weight: 700;
   letter-spacing: 2.1px;
 }
@@ -79,7 +94,9 @@ h3 {
 /* HEADER */
 .header {
   display: flex;
-  background-color: #191c26;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background-color: var(--cover-bg);
 }
 .sidebar {
   display: flex;
@@ -113,31 +130,42 @@ h3 {
 }
 /* HERO */
 .hero {
+}
+.hero-list {
+  background-color: var(--main-bg);
+}
+.hero-wrap {
+  padding: 272px 100px 208px 100px;
   background-image: url(../images/heroslider1-1x.jpg);
   background-size: cover;
 }
 .hero .suptitle {
+  margin-bottom: 20px;
+
   color: var(--up-title);
 }
 .hero-title {
+  margin-bottom: 20px;
+
   color: var(--title-dark);
   font-size: 72px;
-  font-family: Raleway;
+  font-family: var(--secondary-family-text);
   font-weight: 700;
   letter-spacing: 3.6px;
 }
 .hero-text {
   color: var(--text-dark);
   font-size: 18px;
-  font-weight: 400;
   line-height: 1.6666;
   letter-spacing: 0.36px;
-  word-wrap: break-word;
 }
 
 /* ABOUT */
 .about {
   display: flex;
+
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .about-list {
   display: flex;
@@ -146,18 +174,21 @@ h3 {
 .about-item {
 }
 .about-title {
+  margin-bottom: 20px;
 }
 .about-subtitle {
+  margin-bottom: 20px;
+
   color: var(--sub-title);
   font-size: 18px;
-  font-weight: 400;
   line-height: 1.6666;
   letter-spacing: 0.36px;
 }
 .about-text {
+  margin-bottom: 42px;
+
   color: var(--sub-title);
   font-size: 14px;
-  font-weight: 400;
   line-height: 1.8571;
   letter-spacing: 0.28px;
 }
@@ -166,27 +197,50 @@ h3 {
 }
 /* SERVICE AND PRICE */
 .service {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-image: url(../images/heroslider2-1x.jpg);
+  background-size: cover;
+}
+.service-suptitle {
+  margin-bottom: 20px;
+
+  color: var(--text-dark);
 }
 .service-title {
+  margin-bottom: 44px;
+  color: var(--title-dark);
 }
 .service-list {
 }
 .service-item {
 }
-.service-text {
+.service-text,
+.service-price {
   color: var(--text-dark);
   font-size: 18px;
-  font-weight: 400;
   line-height: 30px;
   letter-spacing: 0.36px;
-  word-wrap: break-word;
+}
+.service-price {
+}
+.service-btn {
+  display: block;
+  margin: 0 auto;
+  margin-top: 44px;
 }
 /* ADVANTAGES */
 .advantages {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .advantages-list {
 }
 .advantages-item {
+  width: 170px;
+  height: 133px;
+  padding: 20px 24px;
+  text-align: center;
   background-color: var(--second-bg);
 }
 .advantages-number {
@@ -194,10 +248,9 @@ h3 {
   font-size: 42px;
   font-weight: 700;
   letter-spacing: 2.1px;
-  word-wrap: break-word;
 }
 .advantages-plus {
-  color: var(--hover);
+  color: var(--second-color-text);
   font-size: 16px;
   font-weight: 600;
 }
@@ -208,26 +261,36 @@ h3 {
 }
 .advantages-info {
 }
+.advantages-suptitle {
+  margin-bottom: 20px;
+}
 .advantages-title {
+  margin-bottom: 20px;
+
   color: var(--title-light);
   font-size: 42px;
-  font-family: Raleway;
+  font-family: var(--secondary-family-text);
   font-weight: 700;
   letter-spacing: 2.1px;
 }
 .advantages-describe {
   color: var(--sub-title);
   font-size: 18px;
-  font-family: Open Sans;
-  font-weight: 400;
   line-height: 1.6666;
   letter-spacing: 0.36px;
 }
 /* TEAM */
 .team {
+  padding-top: 120px;
+  padding-bottom: 120px;
+
   background-color: var(--second-bg);
 }
+.team-suptitle {
+  margin-bottom: 20px;
+}
 .team-title {
+  margin-bottom: 44px;
 }
 .team-list {
 }
@@ -235,14 +298,13 @@ h3 {
 }
 .team-name {
   color: var(--title-light);
-  font-size: 18px;
   font-weight: 400;
+  font-size: 18px;
   letter-spacing: 0.36px;
 }
 .team-level {
-  color: var(--hover);
+  color: var(--second-color-text);
   font-size: 14px;
-  font-weight: 400;
   letter-spacing: 0.28px;
 }
 .team-subscribe-list {
@@ -254,6 +316,11 @@ h3 {
 
 /* PORTFOLIO */
 .portfolio {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.portfolio-suptitle {
+  margin-bottom: 44px;
 }
 .portfolio-list {
   display: flex;
@@ -264,27 +331,75 @@ h3 {
 /* BOOKING + CONTACTS */
 .information {
   display: flex;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
+
+/* ONLINE-BOOKING */
 .booking {
   background-color: var(--cover-bg);
 }
+.booking-title {
+  color: var(--title-dark);
+}
+
+/* CONTACTS */
 .contacts {
-  background: url(../images/contact1x.jpg),
-    lightgray -170.29px 0px / 123.004% 100% no-repeat;
-  /* background-image: url(../images/contact1x.jpg);
+  background-color: var(--cover-bg);
+  background-image: url(../images/contact1x.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
+  /* 
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); */
 }
 .contacts-title {
-}
-.title {
+  margin-bottom: 40px;
+  color: var(--title-dark);
 }
 .contacts-list {
+  font-style: normal;
+  color: var(--text-dark);
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.36px;
 }
 .contacts-item {
+  margin-bottom: 20px;
 }
-/* ONLINE-BOOKING */
+.contacts-item:last-child {
+  margin-bottom: 70px;
+}
+.contacts-address {
+  font-weight: 700;
+}
+.contacts-tel {
+}
+.contacts-email {
+  text-decoration-line: underline;
+}
+.contacts-schedule {
+  margin-bottom: 20px;
 
-/* CONTACTS */
+  color: var(--title-dark);
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.contacts-schedule-time {
+  color: var(--text-dark);
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.36px;
+}
 
 /* FOOTER */
+.footer {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.footer-list {
+}
+.footer-item {
+}
+.footer-link {
+}
