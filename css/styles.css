@@ -59,11 +59,13 @@ img {
   overflow: hidden;
 }
 .btn {
+  min-width: 160px;
+  height: 40px;
+
   background-color: transparent;
   border-radius: 25px;
   border: 1px solid var(--hover);
   color: var(--title-dark);
-  padding: 12px 40px;
   cursor: pointer;
 
   font-size: 12px;
@@ -85,29 +87,43 @@ img {
   letter-spacing: 2.1px;
 }
 .suptitle {
+  margin-bottom: 20px;
+
   color: var(--title-light);
   font-size: 11px;
   font-weight: 600;
   text-transform: uppercase;
 }
-
+.soc-item {
+  color: var(--title-light);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2.2px;
+}
+.soc-item:hover,
+.soc-item:focus {
+  color: var(--hover);
+}
 /* HEADER */
 .header {
-  display: flex;
+  /* display: flex; */
   padding-top: 32px;
   padding-bottom: 32px;
   background-color: var(--cover-bg);
 }
-.sidebar {
+.header-container {
   display: flex;
-  flex-direction: column;
-  background-color: var(--main-bg);
+  align-items: center;
+}
+.logo {
+  margin-right: 131px;
 }
 .nav {
-  display: flex;
+  margin-right: auto;
 }
 .nav-list {
   display: flex;
+  gap: 30px;
 }
 .nav-item {
 }
@@ -122,6 +138,8 @@ img {
   color: var(--hover);
 }
 .header-contact {
+  margin-right: 43px;
+
   color: var(--main-bg);
   font-size: 12px;
   font-weight: 600;
@@ -131,10 +149,18 @@ img {
 /* HERO */
 .hero {
 }
+.hero-container {
+  display: flex;
+}
 .hero-list {
+  width: 100px;
   background-color: var(--main-bg);
 }
+.hero-item:not(:last-child) {
+  margin-right: 40px;
+}
 .hero-wrap {
+  flex-grow: 1;
   padding: 272px 100px 208px 100px;
   background-image: url(../images/heroslider1-1x.jpg);
   background-size: cover;
@@ -154,10 +180,18 @@ img {
   letter-spacing: 3.6px;
 }
 .hero-text {
+  max-width: 360px;
+
   color: var(--text-dark);
   font-size: 18px;
   line-height: 1.6666;
   letter-spacing: 0.36px;
+}
+.slider-switch {
+  color: var(--text-dark);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.1px;
 }
 
 /* ABOUT */
@@ -167,11 +201,18 @@ img {
   padding-top: 120px;
   padding-bottom: 120px;
 }
+.about-container {
+  display: flex;
+  gap: 30px;
+}
 .about-list {
   display: flex;
-  gap: 15px;
+  gap: 30px;
 }
 .about-item {
+}
+.about-wrap {
+  max-width: 470px;
 }
 .about-title {
   margin-bottom: 20px;
@@ -211,9 +252,21 @@ img {
   margin-bottom: 44px;
   color: var(--title-dark);
 }
+.service-wrap {
+  display: flex;
+  justify-content: space-between;
+}
 .service-list {
+  width: calc((100% - 30px) / 2);
+
+  background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
 }
 .service-item {
+  display: flex;
+  justify-content: space-between;
+}
+.service-item:not(:last-child) {
+  margin-bottom: 20px;
 }
 .service-text,
 .service-price {
@@ -293,8 +346,11 @@ img {
   margin-bottom: 44px;
 }
 .team-list {
+  display: flex;
+  gap: 30px;
 }
 .team-item {
+  width: calc((100% - 60px) / 3);
 }
 .team-name {
   color: var(--title-light);
@@ -324,9 +380,10 @@ img {
 }
 .portfolio-list {
   display: flex;
-  gap: 15px;
+  gap: 30px;
 }
 .portfolio-item {
+  width: calc((100% - 90px) / 4);
 }
 /* BOOKING + CONTACTS */
 .information {

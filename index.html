@@ -21,10 +21,8 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <div class="sidebar">
-          <a href="#"><img src="./images/Logo.svg" alt="logo" /></a>
-        </div>
+      <div class="container header-container">
+        <a href="#" class="logo"><img src="./images/Logo.svg" alt="logo" /></a>
         <nav class="nav">
           <ul class="nav-list">
             <li class="nav-item">
@@ -43,20 +41,18 @@
               <a href="#reviews" class="nav-link">Reviews</a>
             </li>
           </ul>
-          <a href="tel:+380441111111" class="header-contact"
-            >+38 044 111 11 11</a
-          >
-          <button type="submit" class="btn" form="booking-form" value="submit">
-            ONLINE-BOOKING
-          </button>
         </nav>
+        <a href="tel:+380441111111" class="header-contact">+38 044 111 11 11</a>
+        <button type="submit" class="btn" form="booking-form" value="submit">
+          ONLINE-BOOKING
+        </button>
       </div>
     </header>
     <main>
       <section class="hero">
-        <div class="container">
+        <div class="container hero-container">
           <ul class="hero-list">
-            <li class="hero-item">
+            <li class="hero-item soc-item">
               <a
                 href="#"
                 class="hero-link"
@@ -65,7 +61,7 @@
                 >Instagram</a
               >
             </li>
-            <li class="hero-item">
+            <li class="hero-item soc-item">
               <a
                 href="#"
                 class="hero-link"
@@ -76,17 +72,19 @@
             </li>
           </ul>
           <div class="hero-wrap">
-            <span class="suptitle">A hair salon for men in Kyiv</span>
+            <p class="suptitle">A hair salon for men in Kyiv</p>
             <h1 class="hero-title">BarberShop</h1>
             <p class="hero-text">
               We are experts in trendy men’s haircuts. We work quickly,
               carefully and with style.
             </p>
           </div>
+          <!-- <span class="slider-switch">Back</span>
+          <span class="slider-switch">Forward</span> -->
         </div>
       </section>
       <section class="about" id="about">
-        <div class="container">
+        <div class="container about-container">
           <ul class="about-list">
             <li class="about-item">
               <img src="./images/img1.jpg" alt="head" />
@@ -95,10 +93,10 @@
               <img src="./images/img2.jpg" alt="head" />
             </li>
           </ul>
-          <div>
-            <span class="about-suptitle">About</span>
+          <div class="about-wrap">
+            <p class="about-suptitle suptitle">About</p>
             <h2 class="about-title title">Best Barbershop in your city</h2>
-            <p class="subtitle">
+            <p class="about-subtitle">
               If you want to add more confidence to your image, you should
               definitely visit us.
             </p>
@@ -122,46 +120,48 @@
       </section>
       <section class="service" id="service">
         <div class="container">
-          <span class="service-suptitle suptitle"
-            >spend your time with thw best masters</span
-          >
+          <p class="service-suptitle suptitle">
+            spend your time with thw best masters
+          </p>
           <h2 class="service-title title">Services and prices</h2>
-          <ul class="service-list">
-            <li class="service-item">
-              <p class="service-text">Men's haircut</p>
-              <span class="service-price">from 300 uah.</span>
-            </li>
-            <li class="service-item">
-              <p class="service-text">Beard trim</p>
-              <span class="service-price">from 300 uah.</span>
-            </li>
-            <li class="service-item">
-              <p class="service-text">Mustache trim</p>
-              <span class="service-price">from 200 uah.</span>
-            </li>
-            <li class="service-item">
-              <p class="service-text">Straight razor shave</p>
-              <span class="service-price">from 200 uah.</span>
-            </li>
-          </ul>
-          <ul class="service-list">
-            <li class="service-item">
-              <p class="service-text">Trainee's haircut</p>
-              <span class="service-price">from 50 uah.</span>
-            </li>
-            <li class="service-item">
-              <p class="service-text">Haircut under the nozzle</p>
-              <span class="service-price">from 200 uah.</span>
-            </li>
-            <li class="service-item">
-              <p class="service-text">Children's haircut (0-12 y.o.)</p>
-              <span class="service-price">from 300 uah.</span>
-            </li>
-            <li class="service-item">
-              <p class="service-text">Camouflage of gray hair</p>
-              <span class="service-price">from 200 uah.</span>
-            </li>
-          </ul>
+          <div class="service-wrap">
+            <ul class="service-list">
+              <li class="service-item">
+                <p class="service-text">Men's haircut</p>
+                <span class="service-price">from 300 uah.</span>
+              </li>
+              <li class="service-item">
+                <p class="service-text">Beard trim</p>
+                <span class="service-price">from 300 uah.</span>
+              </li>
+              <li class="service-item">
+                <p class="service-text">Mustache trim</p>
+                <span class="service-price">from 200 uah.</span>
+              </li>
+              <li class="service-item">
+                <p class="service-text">Straight razor shave</p>
+                <span class="service-price">from 200 uah.</span>
+              </li>
+            </ul>
+            <ul class="service-list">
+              <li class="service-item">
+                <p class="service-text">Trainee's haircut</p>
+                <span class="service-price">from 50 uah.</span>
+              </li>
+              <li class="service-item">
+                <p class="service-text">Haircut under the nozzle</p>
+                <span class="service-price">from 200 uah.</span>
+              </li>
+              <li class="service-item">
+                <p class="service-text">Children's haircut (0-12 y.o.)</p>
+                <span class="service-price">from 300 uah.</span>
+              </li>
+              <li class="service-item">
+                <p class="service-text">Camouflage of gray hair</p>
+                <span class="service-price">from 200 uah.</span>
+              </li>
+            </ul>
+          </div>
           <button
             type="submit"
             class="service-btn btn"
@@ -197,9 +197,7 @@
             </li>
           </ul>
           <div class="advantages-info">
-            <span class="advantages-suptitle suptitle"
-              >old traditional school</span
-            >
+            <p class="advantages-suptitle suptitle">old traditional school</p>
             <h2 class="advantages-title title">
               <span>&iquest;</span> Why people come to us?
             </h2>
@@ -212,95 +210,118 @@
       </section>
       <section class="team" id="team">
         <div class="container">
-          <span class="team-suptitle suptitle"
-            >For true enjoyers of the atmosphere</span
-          >
+          <p class="team-suptitle suptitle">
+            For true enjoyers of the atmosphere
+          </p>
           <h2 class="team-title title">Our barbers</h2>
           <ul class="team-list">
             <li class="team-item">
               <img src="./images/team1-1x.jpg" alt="barber with tattoo" />
-              <h3 class="team-name">John Smith</h3>
-              <p class="team-level">Extreme Barber</p>
-              <ul class="team-subscribe-list">
-                <li class="team-subscribe-item">
-                  <a href="#" class="team-subscribe-link"></a>
-                </li>
-                <li class="team-subscribe-item">
-                  <a href="#" class="team-subscribe-link"></a>
-                </li>
-                <li class="team-subscribe-item">
-                  <a href="#" class="team-subscribe-link"></a>
-                </li>
-                <li class="team-subscribe-item">
-                  <a href="#" class="team-subscribe-link"></a>
-                </li>
-              </ul>
+              <div>
+                <h3 class="team-name">John Smith</h3>
+                <p class="team-level">Extreme Barber</p>
+                <ul class="team-subscribe-list">
+                  <li class="team-subscribe-item">
+                    <a href="#" class="team-subscribe-link"></a>
+                  </li>
+                  <li class="team-subscribe-item">
+                    <a href="#" class="team-subscribe-link"></a>
+                  </li>
+                  <li class="team-subscribe-item">
+                    <a href="#" class="team-subscribe-link"></a>
+                  </li>
+                  <li class="team-subscribe-item">
+                    <a href="#" class="team-subscribe-link"></a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="team-item">
               <img src="./images/team2-1x.jpg" alt="barber with client" />
-              <h3 class="team-name">Machele Doe</h3>
-              <p class="team-level">Extreme Barber</p>
-              <ul class="team-subscribe-list">
-                <li class="team-subscribe-item">
-                  <a href="#" class="team-subscribe-link"></a>
-                </li>
-                <li class="team-subscribe-item">
-                  <a href="#" class="team-subscribe-link"></a>
-                </li>
-                <li class="team-subscribe-item">
-                  <a href="#" class="team-subscribe-link"></a>
-                </li>
-                <li class="team-subscribe-item">
-                  <a href="#" class="team-subscribe-link"></a>
-                </li>
-              </ul>
+              <div>
+                <h3 class="team-name">Machele Doe</h3>
+                <p class="team-level">Extreme Barber</p>
+                <ul class="team-subscribe-list">
+                  <li class="team-subscribe-item">
+                    <a href="#" class="team-subscribe-link"></a>
+                  </li>
+                  <li class="team-subscribe-item">
+                    <a href="#" class="team-subscribe-link"></a>
+                  </li>
+                  <li class="team-subscribe-item">
+                    <a href="#" class="team-subscribe-link"></a>
+                  </li>
+                  <li class="team-subscribe-item">
+                    <a href="#" class="team-subscribe-link"></a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="team-item">
               <img
                 src="./images/team3-1x.jpg"
                 alt="barber with tattoo and client"
               />
-              <h3 class="team-name">Alan Black</h3>
-              <p class="team-level">Extreme Barber</p>
-              <ul class="team-subscribe-list">
-                <li class="team-subscribe-item">
-                  <a href="#" class="team-subscribe-link"></a>
-                </li>
-                <li class="team-subscribe-item">
-                  <a href="#" class="team-subscribe-link"></a>
-                </li>
-                <li class="team-subscribe-item">
-                  <a href="#" class="team-subscribe-link"></a>
-                </li>
-                <li class="team-subscribe-item">
-                  <a href="#" class="team-subscribe-link"></a>
-                </li>
-              </ul>
+              <div>
+                <h3 class="team-name">Alan Black</h3>
+                <p class="team-level">Extreme Barber</p>
+                <ul class="team-subscribe-list">
+                  <li class="team-subscribe-item">
+                    <a href="#" class="team-subscribe-link"></a>
+                  </li>
+                  <li class="team-subscribe-item">
+                    <a href="#" class="team-subscribe-link"></a>
+                  </li>
+                  <li class="team-subscribe-item">
+                    <a href="#" class="team-subscribe-link"></a>
+                  </li>
+                  <li class="team-subscribe-item">
+                    <a href="#" class="team-subscribe-link"></a>
+                  </li>
+                </ul>
+              </div>
             </li>
           </ul>
         </div>
       </section>
       <section class="portfolio">
         <div class="container">
-          <span class="portfolio-suptitle suptitle"
-            >In Latin, "barba" means "beard"</span
-          >
+          <p class="portfolio-suptitle suptitle">
+            In Latin, "barba" means "beard"
+          </p>
           <h2 class="visually-hidden">Portfolio</h2>
           <ul class="portfolio-list">
             <li class="portfolio-item">
               <img
                 src="./images/portfolio1-1x.jpg"
                 alt="barber with hairmachine"
+                width="270"
+                height="360"
               />
             </li>
             <li class="portfolio-item">
-              <img src="./images/portfolio2-1x.jpg" alt="barber shaves" />
+              <img
+                src="./images/portfolio2-1x.jpg"
+                alt="barber shaves"
+                width="270"
+                height="360"
+              />
             </li>
             <li class="portfolio-item">
-              <img src="./images/portfolio3-1x.jpg" alt="barber with client" />
+              <img
+                src="./images/portfolio3-1x.jpg"
+                alt="barber with client"
+                width="270"
+                height="360"
+              />
             </li>
             <li class="portfolio-item">
-              <img src="./images/portfolio4-1x.jpg" alt="barber's hands" />
+              <img
+                src="./images/portfolio4-1x.jpg"
+                alt="barber's hands"
+                width="270"
+                height="360"
+              />
             </li>
           </ul>
         </div>
@@ -357,7 +378,7 @@
         <div>
           <p><span>&#169;</span> Copyright 2020</p>
           <ul class="footer-list">
-            <li class="footer-item">
+            <li class="footer-item soc-item">
               <a
                 href="#"
                 class="footer-link"
@@ -366,7 +387,7 @@
                 >Instagram</a
               >
             </li>
-            <li class="footer-item">
+            <li class="footer-item soc-item">
               <a
                 href="#"
                 class="footer-link"
