@@ -44,6 +44,7 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  border: 2px solid red;
 }
 .visually-hidden {
   position: absolute;
@@ -87,12 +88,23 @@ img {
   letter-spacing: 2.1px;
 }
 .suptitle {
-  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 
   color: var(--title-light);
   font-size: 11px;
   font-weight: 600;
   text-transform: uppercase;
+}
+.suptitle::before {
+  margin-right: 20px;
+  content: " ";
+  height: 1px;
+  width: 60px;
+  background-color: currentColor;
+
+  /* transform: rotate(90deg); */
 }
 .soc-item {
   color: var(--title-light);
@@ -162,7 +174,11 @@ img {
 .hero-wrap {
   flex-grow: 1;
   padding: 272px 100px 208px 100px;
-  background-image: url(../images/heroslider1-1x.jpg);
+  background-image: linear-gradient(
+      rgba(25, 28, 38, 0.2),
+      rgba(25, 28, 38, 0.2)
+    ),
+    url(../images/heroslider3-1x.jpg);
   background-size: cover;
 }
 .hero .suptitle {
@@ -213,7 +229,20 @@ img {
 }
 .about-wrap {
   max-width: 470px;
+  /* position: relative; */
 }
+/* .about-suptitle {
+  display: flex;
+  align-items: center;
+  /* position: relative;
+}
+/* .about-suptitle::before {
+
+  content: " ";
+  width: 1px;
+  height: 60px;
+  background-color: #303030;
+}*/
 .about-title {
   margin-bottom: 20px;
 }
@@ -240,7 +269,11 @@ img {
 .service {
   padding-top: 120px;
   padding-bottom: 120px;
-  background-image: url(../images/heroslider2-1x.jpg);
+  background-image: linear-gradient(
+      rgba(25, 28, 38, 0.2),
+      rgba(25, 28, 38, 0.2)
+    ),
+    url(../images/heroslider2-1x.jpg);
   background-size: cover;
 }
 .service-suptitle {
@@ -287,7 +320,12 @@ img {
   padding-top: 120px;
   padding-bottom: 120px;
 }
+.advantages-container {
+  display: flex;
+  gap: 130px;
+}
 .advantages-list {
+  display: flex;
 }
 .advantages-item {
   width: 170px;
@@ -319,6 +357,7 @@ img {
 }
 .advantages-title {
   margin-bottom: 20px;
+  max-width: 430px;
 
   color: var(--title-light);
   font-size: 42px;
@@ -327,6 +366,8 @@ img {
   letter-spacing: 2.1px;
 }
 .advantages-describe {
+  max-width: 500px;
+
   color: var(--sub-title);
   font-size: 18px;
   line-height: 1.6666;
@@ -352,22 +393,46 @@ img {
 .team-item {
   width: calc((100% - 60px) / 3);
 }
+.team-wrap {
+  text-align: center;
+}
 .team-name {
+  margin-top: 30px;
+
   color: var(--title-light);
   font-weight: 400;
   font-size: 18px;
   letter-spacing: 0.36px;
 }
 .team-level {
+  margin-top: 8px;
+
   color: var(--second-color-text);
   font-size: 14px;
   letter-spacing: 0.28px;
 }
 .team-subscribe-list {
+  display: flex;
+  gap: 10px;
+  margin-top: 30px;
+  justify-content: center;
 }
 .team-subscribe-item {
+  width: 44px;
+  height: 44px;
 }
 .team-subscribe-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: var(--main-bg);
+}
+.team-subscribe-link:hover,
+.team-subscribe-link:focus {
+  fill: var(--hover);
 }
 
 /* PORTFOLIO */
@@ -403,7 +468,11 @@ img {
 /* CONTACTS */
 .contacts {
   background-color: var(--cover-bg);
-  background-image: url(../images/contact1x.jpg);
+  background-image: linear-gradient(
+      rgba(25, 28, 38, 0.2),
+      rgba(25, 28, 38, 0.2)
+    ),
+    url(../images/contact1x.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   /* 
@@ -422,12 +491,17 @@ img {
 }
 .contacts-item {
   margin-bottom: 20px;
+  max-width: 230px;
 }
 .contacts-item:last-child {
   margin-bottom: 70px;
 }
 .contacts-address {
   font-weight: 700;
+}
+.contacts-link {
+  display: flex;
+  align-items: center;
 }
 .contacts-tel {
 }
@@ -451,12 +525,25 @@ img {
 
 /* FOOTER */
 .footer {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+.footer-container {
+  display: flex;
+}
+.footer-text {
+  margin-right: auto;
+
+  color: var(--text-dark);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2.2px;
 }
 .footer-list {
+  display: flex;
 }
 .footer-item {
+  margin-right: 40px;
 }
 .footer-link {
 }
