@@ -43,7 +43,12 @@
           </ul>
         </nav>
         <a href="tel:+380441111111" class="header-contact">+38 044 111 11 11</a>
-        <button type="submit" class="btn" form="booking-form" value="submit">
+        <button
+          type="submit"
+          class="btn"
+          form="online-booking-form"
+          value="submit"
+        >
           ONLINE-BOOKING
         </button>
       </div>
@@ -51,26 +56,28 @@
     <main>
       <section class="hero">
         <div class="container hero-container">
-          <ul class="hero-list">
-            <li class="hero-item soc-item">
-              <a
-                href="#"
-                class="hero-link"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Instagram</a
-              >
-            </li>
-            <li class="hero-item soc-item">
-              <a
-                href="#"
-                class="hero-link"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Youtube</a
-              >
-            </li>
-          </ul>
+          <div class="soc-wrap">
+            <ul class="hero-list">
+              <li class="hero-item soc-item">
+                <a
+                  href="#"
+                  class="hero-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Instagram</a
+                >
+              </li>
+              <li class="hero-item soc-item">
+                <a
+                  href="#"
+                  class="hero-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Youtube</a
+                >
+              </li>
+            </ul>
+          </div>
           <div class="hero-wrap">
             <p class="suptitle">A hair salon for men in Kyiv</p>
             <h1 class="hero-title">BarberShop</h1>
@@ -165,7 +172,7 @@
           <button
             type="submit"
             class="service-btn btn"
-            form="booking-form"
+            form="online-booking-form"
             value="submit"
           >
             ONLINE-BOOKING
@@ -176,23 +183,19 @@
         <div class="container advantages-container">
           <ul class="advantages-list">
             <li class="advantages-item">
-              <span class="advantages-number">600</span
-              ><sup class="advantages-plus">+</sup>
+              <span class="advantages-number">600</span>
               <p class="advantages-text">Satisfied customers per day</p>
             </li>
             <li class="advantages-item">
-              <span class="advantages-number">50</span
-              ><sup class="advantages-plus">+</sup>
+              <span class="advantages-number">50</span>
               <p class="advantages-text">Awards for excellent service</p>
             </li>
             <li class="advantages-item">
-              <span class="advantages-number">20</span
-              ><sup class="advantages-plus">+</sup>
+              <span class="advantages-number">20</span>
               <p class="advantages-text">Kyiv’s best barbers</p>
             </li>
             <li class="advantages-item">
-              <span class="advantages-number">100</span
-              ><sup class="advantages-plus">+</sup>
+              <span class="advantages-number">100</span>
               <p class="advantages-text">Gifts for regular customers</p>
             </li>
           </ul>
@@ -391,18 +394,18 @@
           </ul>
         </div> -->
       </section>
-      <section class="information" id="information">
-        <div class="container">
-          <div class="booking">
-            <h2 class="booking-title title">Online-booking</h2>
-            <form id="booking-form">
+      <div class="information" id="information">
+        <div class="container information-container">
+          <section class="online-booking">
+            <h2 class="online-booking-title title">Online-booking</h2>
+            <form id="online-booking-form">
               <input placeholder="NAME*" />
               <input placeholder="PHONE*" />
               <textarea placeholder="MESSAGE"></textarea>
               <button type="submit" class="btn">SEND</button>
             </form>
-          </div>
-          <div class="contacts">
+          </section>
+          <section class="contacts">
             <h2 class="contacts-title title">Contacts</h2>
             <address>
               <ul class="contacts-list">
@@ -442,33 +445,35 @@
             </address>
             <p class="contacts-schedule">working hours</p>
             <p class="contacts-schedule-time">Every day from 9:00 to 22:00</p>
-          </div>
+          </section>
         </div>
-      </section>
+      </div>
     </main>
     <footer class="footer">
       <div class="container footer-container">
         <p class="footer-text"><span>&#169;</span> Copyright 2020</p>
-        <ul class="footer-list">
-          <li class="footer-item soc-item">
-            <a
-              href="#"
-              class="footer-link"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Instagram</a
-            >
-          </li>
-          <li class="footer-item soc-item">
-            <a
-              href="#"
-              class="footer-link"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Youtube</a
-            >
-          </li>
-        </ul>
+        <div class="sub-list">
+          <ul class="footer-list">
+            <li class="footer-item soc-item">
+              <a
+                href="#"
+                class="footer-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Instagram</a
+              >
+            </li>
+            <li class="footer-item soc-item">
+              <a
+                href="#"
+                class="footer-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Youtube</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>
