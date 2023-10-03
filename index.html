@@ -17,6 +17,11 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <link rel="stylesheet" href="./css/reviews.css" /> -->
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Barbershop</title>
   </head>
   <body>
@@ -82,7 +87,7 @@
         <div class="hero-switcher">
             <span class="hero-switcher-item left">Back</span>
           <span class="hero-switcher-item right">Forward</span>
-          </div>
+        </div>
       </section>
       <section class="about" id="about">
         <div class="container about-container">
@@ -366,19 +371,117 @@
           </ul>
         </div>
       </section>
-      <section class="reviws" id="reviews">
-        <!-- <div class="container">
+      <section class="reviews" id="reviews">
+        <div class="container">
           <p class="reviews-suptitle suptitle">reviews</p>
-          <ul>
-            <li>
-              <img src="./images/team1-1x.jpg" />
-              <p class="reviews-name">Teddy Schaefer</p>
-            </li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </div> -->
+          <h2 class="visually-hidden">Reviews</h2>
+          <ul class="reviews-list">
+        <li class="reviews-item">
+          <div class="reviews-portfolio">
+            <div class="reviews-user">
+              <div class="reviews-img">
+                <img src="./images/reviews-client1.jpg"/>
+              </div>
+            <div class="reviews-name">
+              <strong>Leo Erickson</strong>
+            <span>@leoerickson</span>
+            </div>
+            </div>
+            <div class="reviews-mark">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+          <div class="reviews-comment">
+            <p>This is by far my favorite barber shop in the city. They have the
+              best barbers and just moved into a larger space. I am more pleased
+              with the haircut after each visit. I highly recommend this
+              Barbershop to anyone looking for a great cut for great value.</p>
+          </div>
+        </li>
+        <li class="reviews-item">
+          <div class="reviews-portfolio">
+            <div class="reviews-user">
+              <div class="reviews-img">
+                <img src="./images/reviews-client2.jpg"/>
+              </div>
+            <div class="reviews-name">
+              <strong>Jak Brewer</strong>
+            <span>@jakbrewer</span>
+            </div>
+            </div>
+            <div class="reviews-mark">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="reviews-comment">
+            <p>John is the best barber I’ve had in over 20 years of getting my
+              haircut as an adult. The best hot shave and full service a guy can
+              ask for. Highly recommend this becomes.</p>
+          </div>
+        </li>
+        <li class="reviews-item">
+          <div class="reviews-portfolio">
+            <div class="reviews-user">
+              <div class="reviews-img">
+                <img src="./images/reviews-client3.jpg"/>
+              </div>
+            <div class="reviews-name">
+              <strong>Zackary Black</strong>
+            <span>@zackaryblack</span>
+            </div>
+            </div>
+            <div class="reviews-mark">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+          <div class="reviews-comment">
+            <p>Highly recommend these guys. They are my go-to barbershop.
+              Excellent attention to detail and I always leave happy and looking
+              much better than before. Definitely definitely head here when you
+              need a cut or just to get cleaned up.</p>
+          </div>
+        </li>
+        <li class="reviews-item">
+          <div class="reviews-portfolio">
+            <div class="reviews-user">
+              <div class="reviews-img">
+                <img src="./images/reviews-client4.jpg"/>
+              </div>
+            <div class="reviews-name">
+              <strong>Mathew O'Brien</strong>
+            <span>@mathewO'Brien</span>
+            </div>
+            </div>
+            <div class="reviews-mark">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="reviews-comment">
+            <p>Been going here since I moved to the area and it’s consistently a
+              high quality experience. I’m always happy with the haircut. Team
+              is very friendly and personable and the prices are affordable!
+              Would highly recommend!</p>
+          </div>
+        </li>
+      </ul>
+      <button type="button" class="btn reviews-btn">Read more</button>
+        </div>
       </section>
       <div class="information" id="information">
         <div class="container information-container">
@@ -401,7 +504,7 @@
                     target="_blank"
                     rel="noopener noreferrer"
                     class="contacts-address contacst-link"
-                    ><svg width="24" height="24">
+                    ><svg width="24" height="24" class="contacts-icon">
                       <use href="./images/sprite.svg#icon-map-pin"></use>
                     </svg>
                     st. Vasilkovaya, 7A Kiev, 08132</a
@@ -412,7 +515,7 @@
                     href="tel:+380441111111"
                     class="contacts-tel contacts-link"
                   >
-                    <svg width="24" height="24">
+                    <svg width="24" height="24" class="contacts-icon">
                       <use href="./images/sprite.svg#icon-phone"></use></svg
                     >+38 044 111 11 11</a
                   >
@@ -421,7 +524,7 @@
                   <a
                     href="mailto:barbershop@email.com"
                     class="contacts-email contacts-link"
-                    ><svg width="24" height="24">
+                    ><svg width="24" height="24" class="contacts-icon">
                       <use href="./images/sprite.svg#icon-mail"></use>
                     </svg>
                     barbershop@email.com</a

@@ -554,6 +554,84 @@ img {
 .portfolio-item {
   width: calc((100% - 90px) / 4);
 }
+
+/* REVIEWS */
+.reviews {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: var(--second-bg);
+}
+.reviews-suptitle {
+  margin-bottom: 44px;
+}
+.reviews-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+.reviews-item {
+  background-color: var(--main-bg);
+  width: calc((100% - 30px) / 2);
+  padding: 30px;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.reviews-item:hover {
+  transform: translateY(-10px);
+  transition: all easy 0.3s;
+}
+.reviews-portfolio {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.reviews-user {
+  display: flex;
+}
+.reviews-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 20px;
+}
+.reviews-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.reviews-name {
+  display: flex;
+  flex-direction: column;
+}
+.reviews-name strong {
+  color: #3d3d3d;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+.reviews-name span {
+  color: #979797;
+  font-size: 0.8rem;
+}
+.reviews-mark {
+  display: flex;
+  color: #f9d71f;
+}
+.reviews-comment {
+  font-size: 0.9rem;
+  color: #4b4b4b;
+}
+.reviews-btn {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: var(--title-light);
+}
 /* BOOKING + CONTACTS */
 .information {
   margin: 0 auto;
@@ -566,6 +644,10 @@ img {
 }
 .information-container {
   display: flex;
+}
+::selection {
+  color: #fff;
+  background-color: #202020;
 }
 
 /* ONLINE-BOOKING */
@@ -613,6 +695,9 @@ img {
 }
 .contacts-email {
   text-decoration-line: underline;
+}
+.contacts-icon {
+  margin-right: 16px;
 }
 .contacts-schedule {
   margin-bottom: 20px;
