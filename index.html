@@ -16,12 +16,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css" />
-    <!-- <link rel="stylesheet" href="./css/reviews.css" /> -->
-    <script
-      src="https://kit.fontawesome.com/c8e4d183c2.js"
-      crossorigin="anonymous"
-    ></script>
+    
     <title>Barbershop</title>
   </head>
   <body>
@@ -78,7 +75,7 @@
           </div>
           <div class="hero-wrap">
             <p class="suptitle">A hair salon for men in Kyiv</p>
-            <h1 class="hero-title">BarberShop</h1>
+            <h1 class="hero-title" data-aos="fade-up">BarberShop</h1>
             <p class="hero-text">
               We are experts in trendy men’s haircuts. We work quickly,
               carefully and with style.
@@ -92,16 +89,16 @@
       <section class="about" id="about">
         <div class="container about-container">
           <ul class="about-list">
-            <li class="about-item">
+            <li class="about-item" data-aos="flip-left">
               <img src="./images/img1.jpg" alt="head" />
             </li>
-            <li class="about-item">
+            <li class="about-item" data-aos="flip-left">
               <img src="./images/img2.jpg" alt="head" />
             </li>
           </ul>
           <div class="about-wrap">
             <p class="about-suptitle suptitle">About</p>
-            <h2 class="about-title title">Best Barbershop in your city</h2>
+            <h2 class="about-title title" data-aos="fade-left">Best Barbershop in your city</h2>
             <p class="about-subtitle">
               If you want to add more confidence to your image, you should
               definitely visit us.
@@ -126,9 +123,9 @@
           <p class="service-suptitle suptitle">
             spend your time with the best masters
           </p>
-          <h2 class="service-title title">Services and prices</h2>
+          <h2 class="service-title title" data-aos="fade-right">Services and prices</h2>
           <div class="service-wrap">
-            <ul class="service-list">
+            <ul class="service-list" data-aos="zoom-in-up">
               <li class="service-item">
                 <p class="service-text">Men's haircut</p>
                 <span class="service-price">from 300 uah.</span>
@@ -146,7 +143,7 @@
                 <span class="service-price">from 200 uah.</span>
               </li>
             </ul>
-            <ul class="service-list">
+            <ul class="service-list" data-aos="zoom-in-up">
               <li class="service-item">
                 <p class="service-text">Trainee's haircut</p>
                 <span class="service-price">from 50 uah.</span>
@@ -192,7 +189,7 @@
           </ul>
           <div class="advantages-info">
             <p class="advantages-suptitle suptitle">old traditional school</p>
-            <h2 class="advantages-title title">
+            <h2 class="advantages-title title" data-aos="fade-left">
               <span>&iquest;</span> Why people come to us?
             </h2>
             <p class="advantages-describe">
@@ -207,7 +204,7 @@
           <p class="team-suptitle suptitle">
             For true enjoyers of the atmosphere
           </p>
-          <h2 class="team-title title">Our barbers</h2>
+          <h2 class="team-title title" data-aos="fade-right">Our barbers</h2>
           <ul class="team-list">
             <li class="team-item">
               <img src="./images/team1-1x.jpg" alt="barber with tattoo" />
@@ -336,7 +333,7 @@
           </p>
           <h2 class="visually-hidden">Portfolio</h2>
           <ul class="portfolio-list">
-            <li class="portfolio-item">
+            <li class="portfolio-item" data-aos="flip-right">
               <img
                 src="./images/portfolio1-1x.jpg"
                 alt="barber with hairmachine"
@@ -344,7 +341,7 @@
                 height="360"
               />
             </li>
-            <li class="portfolio-item">
+            <li class="portfolio-item" data-aos="flip-right">
               <img
                 src="./images/portfolio2-1x.jpg"
                 alt="barber shaves"
@@ -352,7 +349,7 @@
                 height="360"
               />
             </li>
-            <li class="portfolio-item">
+            <li class="portfolio-item" data-aos="flip-right">
               <img
                 src="./images/portfolio3-1x.jpg"
                 alt="barber with client"
@@ -360,7 +357,7 @@
                 height="360"
               />
             </li>
-            <li class="portfolio-item">
+            <li class="portfolio-item" data-aos="flip-right">
               <img
                 src="./images/portfolio4-1x.jpg"
                 alt="barber's hands"
@@ -373,8 +370,9 @@
       </section>
       <section class="reviews" id="reviews">
         <div class="container">
-          <p class="reviews-suptitle suptitle">reviews</p>
-          <h2 class="visually-hidden">Reviews</h2>
+          <p class="reviews-suptitle suptitle">SATISFACTION IS OUR #1 PRIORITY</p>
+          <h2 class="reviews-title title" data-aos="fade-right">Reviews</h2>
+          <p class="reviews-describe">Over the years Barbershop have received many lovely unsolicited reviews and comments from our clients, below we have re-printed a small selection. We would love to hear from you and you can send us your feedback, reviews, comments and criticisms via the form on our feedback form.</p>
           <ul class="reviews-list">
         <li class="reviews-item">
           <div class="reviews-portfolio">
@@ -480,13 +478,16 @@
           </div>
         </li>
       </ul>
-      <button type="button" class="btn reviews-btn">Read more</button>
+      <div class="reviews-buttons">
+        <button type="button" class="btn reviews-btn">Read more</button>
+      <button type="button" class="btn reviews-btn" data-modal-open>Leave feedback</button>
+      </div>
         </div>
       </section>
       <div class="information" id="information">
         <div class="container information-container">
           <section class="online-booking">
-            <h2 class="online-booking-title title">Online-booking</h2>
+            <h2 class="online-booking-title title" data-aos="fade-up-right">Online-booking</h2>
             <form id="online-booking-form">
               <input placeholder="NAME*" />
               <input placeholder="PHONE*" />
@@ -495,7 +496,7 @@
             </form>
           </section>
           <section class="contacts">
-            <h2 class="contacts-title title">Contacts</h2>
+            <h2 class="contacts-title title" data-aos="fade-up-left">Contacts</h2>
             <address>
               <ul class="contacts-list">
                 <li class="contacts-item">
@@ -565,5 +566,19 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal" >
+        <button type="button" class="modal-close-btn" data-modal-close><svg width="18" height="18" class="icon-close"><use href="./images/sprite.svg#icon-close"></use></svg></button>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
+<script src="./js/modal.js"></script>
   </body>
 </html>
