@@ -599,6 +599,40 @@
             <use href="./images/sprite.svg#icon-close"></use>
           </svg>
         </button>
+        <p class="modal-title">Tell us about your impression</p>
+        <form action="" class="modal-form">
+          <input
+            type="text"
+            class="modal-input"
+            name="user-name"
+            placeholder="You're name and surname"
+            required
+          />
+          <input
+            type="text"
+            class="modal-input"
+            name="user-nickname"
+            placeholder="You're nickname"
+            required
+          />
+          <textarea
+            name="comment"
+            id="comment"
+            rows="8"
+            placeholder="Write your feedback"
+            class="modal-textarea"
+            required
+          ></textarea>
+          <div class="reviews-mark modal-star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+
+          <button type="submit" class="btn modal-btn">Send</button>
+        </form>
       </div>
     </div>
     <script
