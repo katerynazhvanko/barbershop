@@ -1,0 +1,14 @@
+.portfolio {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.portfolio-suptitle {
+  margin-bottom: 44px;
+}
+.portfolio-list {
+  display: flex;
+  gap: 30px;
+}
+.portfolio-item {
+  width: calc((100% - 90px) / 4);
+}

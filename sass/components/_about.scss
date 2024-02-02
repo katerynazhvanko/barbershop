@@ -1,0 +1,45 @@
+.about {
+  display: flex;
+
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.about-container {
+  display: flex;
+  gap: 30px;
+}
+.about-list {
+  display: flex;
+  gap: 30px;
+}
+// .about-item {
+// }
+.about-wrap {
+  max-width: 470px;
+}
+.about-title {
+  margin-bottom: 20px;
+}
+.about-subtitle {
+  margin-bottom: 20px;
+
+  color: var(--sub-title);
+  font-size: 18px;
+  line-height: 1.6666;
+  letter-spacing: 0.36px;
+}
+.about-text {
+  margin-bottom: 42px;
+
+  color: var(--sub-title);
+  font-size: 14px;
+  line-height: 1.8571;
+  letter-spacing: 0.28px;
+}
+.about-btn {
+  display: flex;
+  width: 160px;
+  justify-content: center;
+  align-items: center;
+  color: var(--title-light);
+}

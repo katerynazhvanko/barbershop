@@ -1,0 +1,16 @@
+.information {
+  margin: 0 auto;
+  max-width: 1600px;
+  background-color: var(--cover-bg);
+  background-image: url(../images/contacts-bg.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: calc(50% - 15px) 102%;
+}
+.information-container {
+  display: flex;
+}
+::selection {
+  color: #fff;
+  background-color: #202020;
+}

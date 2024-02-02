@@ -17,7 +17,8 @@
       referrerpolicy="no-referrer"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+    <link rel="stylesheet" href="./css/main.min.css" />
 
     <title>Barbershop</title>
   </head>
@@ -509,15 +510,37 @@
       <div class="information" id="information">
         <div class="container information-container">
           <section class="online-booking">
-            <h2 class="online-booking-title title" data-aos="fade-up-right">
-              Online-booking
-            </h2>
-            <form id="online-booking-form">
-              <input placeholder="NAME*" />
-              <input placeholder="PHONE*" />
-              <textarea placeholder="MESSAGE"></textarea>
-              <button type="submit" class="btn">SEND</button>
-            </form>
+            <div class="online-booking-container">
+              <h2 class="online-booking-title title" data-aos="fade-up-right">
+                Online-booking
+              </h2>
+              <form id="online-booking-form">
+                <div class="form-box">
+                  <input
+                    placeholder="NAME*"
+                    name="user-name"
+                    class="online-booking-input name"
+                    type="text"
+                    required
+                  />
+                  <input
+                    type="tel"
+                    placeholder="PHONE*"
+                    name="user-phone"
+                    class="online-booking-input phone"
+                    required
+                  />
+                </div>
+                <textarea
+                  id="user-text"
+                  placeholder="MESSAGE"
+                  type="text"
+                  row="8"
+                  class="online-booking-textarea message"
+                ></textarea>
+                <button type="submit" class="btn">SEND</button>
+              </form>
+            </div>
           </section>
           <section class="contacts">
             <h2 class="contacts-title title" data-aos="fade-up-left">

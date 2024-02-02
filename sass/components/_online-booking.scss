@@ -1,0 +1,54 @@
+.online-booking {
+  width: calc(50% + 15px);
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.online-booking-title {
+  color: var(--title-dark);
+  margin-bottom: 40px;
+}
+.form-box {
+  display: flex;
+}
+.online-booking-input,
+.online-booking-textarea {
+  background-color: transparent;
+  outline: transparent;
+  border: none;
+  border-bottom: 1px solid var(--text-dark);
+  cursor: pointer;
+
+  font-weight: 600;
+  font-size: 11px;
+  color: var(--main-bg);
+}
+.online-booking-input:hover,
+.online-booking-input:focus,
+.online-booking-textarea:hover,
+.online-booking-textarea:focus {
+  border-bottom: 1px solid var(--main-bg);
+  color: var(--main-bg);
+}
+.online-booking-input:hover::placeholder,
+.online-booking-input:focus::placeholder,
+.online-booking-textarea:hover::placeholder,
+.online-booking-textarea:focus::placeholder {
+  color: var(--main-bg);
+}
+.online-booking-input {
+  min-width: 270px;
+  height: 24px;
+  margin-bottom: 40px;
+  padding-bottom: 10px;
+}
+.name {
+  margin-right: 30px;
+}
+// .phone {
+// }
+.message {
+  min-width: 570px;
+  height: 75px;
+  margin-bottom: 45px;
+  resize: none;
+}
