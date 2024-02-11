@@ -32,11 +32,13 @@
   padding: 30px;
   box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
   cursor: pointer;
+
+  &:hover {
+    transform: translateY(-10px);
+    transition: all easy 0.3s;
+  }
 }
-.reviews-item:hover {
-  transform: translateY(-10px);
-  transition: all easy 0.3s;
-}
+
 .reviews-portfolio {
   display: flex;
   align-items: center;

@@ -55,8 +55,9 @@
   background-color: var(--main-bg);
 
   transition: fill 250ms var(--animation);
-}
-.team-subscribe-link:hover,
-.team-subscribe-link:focus {
-  fill: var(--hover);
+
+  &:hover,
+  &:focus {
+    fill: var(--hover);
+  }
 }

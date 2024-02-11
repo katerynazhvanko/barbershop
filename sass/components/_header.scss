@@ -23,8 +23,6 @@
   display: flex;
   gap: 30px;
 }
-// .nav-item {
-// }
 .nav-link {
   color: var(--title-dark);
   font-size: 12px;
@@ -32,12 +30,11 @@
   letter-spacing: 1.2px;
 
   transition: color 250ms var(--animation);
-}
-.nav-link:hover,
-.nav-link:focus,
-.header-contact:hover,
-.header-contact:focus {
-  color: var(--hover);
+
+  &:hover,
+  &:focus {
+    color: var(--hover);
+  }
 }
 .header-contact {
   margin-right: 43px;
@@ -49,4 +46,9 @@
   text-transform: uppercase;
 
   transition: color 250ms var(--animation);
+
+  &:hover,
+  &:focus {
+    color: var(--hover);
+  }
 }

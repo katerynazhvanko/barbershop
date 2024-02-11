@@ -24,29 +24,31 @@
 }
 .service-list {
   width: calc((100% - 30px) / 2);
-}
-.service-list:first-child {
-  background: linear-gradient(rgba(23, 26, 36, 1), rgba(23, 26, 36, 0.2));
-}
-.service-list:last-child {
-  background: linear-gradient(rgba(9, 11, 19, 1), rgba(9, 11, 19, 0.2));
+
+  &:first-child {
+    background: linear-gradient(rgba(23, 26, 36, 1), rgba(23, 26, 36, 0.2));
+  }
+  &:last-child {
+    background: linear-gradient(rgba(9, 11, 19, 1), rgba(9, 11, 19, 0.2));
+  }
 }
 .service-item {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   gap: 12px;
-}
-.service-item:not(:last-child) {
-  margin-bottom: 20px;
-}
-.service-item::before {
-  content: " ";
-  width: 100px;
-  height: 1px;
-  background-color: rgba(157, 164, 189, 0.12);
-  flex-grow: 1;
-  order: 0;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  &::before {
+    content: " ";
+    width: 100px;
+    height: 1px;
+    background-color: rgba(157, 164, 189, 0.12);
+    flex-grow: 1;
+    order: 0;
+  }
 }
 .service-text,
 .service-price {

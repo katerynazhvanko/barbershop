@@ -25,8 +25,6 @@
 body {
   background-color: var(--main-bg);
   font-family: "Open Sans", sans-serif;
-  /*system-ui, -apple-system, "Segoe UI", "Roboto", "Helvetica",
-    "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",*/
   line-height: normal;
   word-wrap: break-word;
 }
@@ -72,9 +70,7 @@ img {
   font-style: normal;
   transition: background-color 250ms var(--animation), border-color 250ms var(--animation);
 }
-
-.btn:hover,
-.btn:focus {
+.btn:hover, .btn:focus {
   background-color: var(--hover);
   border-color: transparent;
 }
@@ -84,6 +80,7 @@ img {
   justify-content: center;
   text-align: center;
   align-items: center;
+  margin-right: 15px;
 }
 
 .title {
@@ -103,7 +100,6 @@ img {
   font-weight: 600;
   text-transform: uppercase;
 }
-
 .suptitle::before {
   margin-right: 20px;
   content: " ";
@@ -119,12 +115,9 @@ img {
   letter-spacing: 2.2px;
   transition: color 250ms var(--animation);
 }
-
-.soc-item:hover,
-.soc-item:focus {
+.soc-item:hover, .soc-item:focus {
   color: var(--hover);
 }
-
 .soc-item::before {
   content: " ";
   height: 1px;
@@ -183,11 +176,7 @@ img {
   letter-spacing: 1.2px;
   transition: color 250ms var(--animation);
 }
-
-.nav-link:hover,
-.nav-link:focus,
-.header-contact:hover,
-.header-contact:focus {
+.nav-link:hover, .nav-link:focus {
   color: var(--hover);
 }
 
@@ -199,6 +188,9 @@ img {
   letter-spacing: 1.2px;
   text-transform: uppercase;
   transition: color 250ms var(--animation);
+}
+.header-contact:hover, .header-contact:focus {
+  color: var(--hover);
 }
 
 .hero-container {
@@ -222,7 +214,6 @@ img {
   transform: rotate(-90deg) translateY(100%); /*translateY щоб опустити на середину */
   transform-origin: bottom left; /* щоб поворот був не з центру, а з нижнього лівого кута */
 }
-
 .hero-list::before {
   content: " ";
   height: 1px;
@@ -274,7 +265,6 @@ img {
   letter-spacing: 1.1px;
   transition: color 250ms var(--animation);
 }
-
 .hero-switcher-item::after {
   display: flex;
   content: "";
@@ -283,19 +273,15 @@ img {
   background-color: var(--text-dark);
   transition: background-color 250ms var(--animation);
 }
+.hero-switcher-item:hover, .hero-switcher-item:focus {
+  color: var(--main-bg);
+}
+.hero-switcher-item:hover::after, .hero-switcher-item:focus::after {
+  background-color: var(--main-bg);
+}
 
 .right {
   text-align: right;
-}
-
-.hero-switcher-item:hover,
-.hero-switcher-item:focus {
-  color: var(--main-bg);
-}
-
-.hero-switcher-item:hover::after,
-.hero-switcher-item:focus::after {
-  background-color: var(--main-bg);
 }
 
 .about {
@@ -376,11 +362,9 @@ img {
 .service-list {
   width: calc((100% - 30px) / 2);
 }
-
 .service-list:first-child {
   background: linear-gradient(rgb(23, 26, 36), rgba(23, 26, 36, 0.2));
 }
-
 .service-list:last-child {
   background: linear-gradient(rgb(9, 11, 19), rgba(9, 11, 19, 0.2));
 }
@@ -391,11 +375,9 @@ img {
   align-items: baseline;
   gap: 12px;
 }
-
 .service-item:not(:last-child) {
   margin-bottom: 20px;
 }
-
 .service-item::before {
   content: " ";
   width: 100px;
@@ -451,11 +433,9 @@ img {
   text-align: center;
   background-color: var(--second-bg);
 }
-
 .advantages-item:nth-child(odd) {
   margin-right: 30px;
 }
-
 .advantages-item:nth-child(even) {
   margin-top: 30px;
 }
@@ -468,7 +448,6 @@ img {
   font-weight: 700;
   letter-spacing: 2.1px;
 }
-
 .advantages-number::after {
   content: "+";
   color: var(--second-color-text);
@@ -579,9 +558,7 @@ img {
   background-color: var(--main-bg);
   transition: fill 250ms var(--animation);
 }
-
-.team-subscribe-link:hover,
-.team-subscribe-link:focus {
+.team-subscribe-link:hover, .team-subscribe-link:focus {
   fill: var(--hover);
 }
 
@@ -642,7 +619,6 @@ img {
   box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
-
 .reviews-item:hover {
   transform: translateY(-10px);
   transition: all easy 0.3s;
@@ -766,23 +742,20 @@ img {
   font-size: 11px;
   color: var(--main-bg);
 }
-
-.online-booking-input:hover,
-.online-booking-input:focus,
+.online-booking-input:hover, .online-booking-input:focus,
 .online-booking-textarea:hover,
 .online-booking-textarea:focus {
   border-bottom: 1px solid var(--main-bg);
   color: var(--main-bg);
 }
-
-.online-booking-input:hover::-moz-placeholder, .online-booking-input:focus::-moz-placeholder, .online-booking-textarea:hover::-moz-placeholder, .online-booking-textarea:focus::-moz-placeholder {
+.online-booking-input:hover:hover::-moz-placeholder, .online-booking-input:hover:focus::-moz-placeholder, .online-booking-input:focus:hover::-moz-placeholder, .online-booking-input:focus:focus::-moz-placeholder, .online-booking-textarea:hover:hover::-moz-placeholder, .online-booking-textarea:hover:focus::-moz-placeholder, .online-booking-textarea:focus:hover::-moz-placeholder, .online-booking-textarea:focus:focus::-moz-placeholder {
   color: var(--main-bg);
 }
-
-.online-booking-input:hover::placeholder,
-.online-booking-input:focus::placeholder,
-.online-booking-textarea:hover::placeholder,
-.online-booking-textarea:focus::placeholder {
+.online-booking-input:hover:hover::placeholder, .online-booking-input:hover:focus::placeholder, .online-booking-input:focus:hover::placeholder, .online-booking-input:focus:focus::placeholder,
+.online-booking-textarea:hover:hover::placeholder,
+.online-booking-textarea:hover:focus::placeholder,
+.online-booking-textarea:focus:hover::placeholder,
+.online-booking-textarea:focus:focus::placeholder {
   color: var(--main-bg);
 }
 
@@ -859,7 +832,6 @@ img {
   font-weight: 600;
   text-transform: uppercase;
 }
-
 .contacts-schedule::before {
   content: " ";
   width: 60px;
@@ -896,7 +868,6 @@ img {
   align-items: center;
   gap: 40px;
 }
-
 .footer-list::before {
   content: " ";
   height: 1px;
@@ -951,8 +922,7 @@ img {
   fill: inherit;
   cursor: pointer;
 }
-
-.modal-close-btn:hover {
+.modal-close-btn:hover, .modal-close-btn:focus {
   fill: var(--hover);
 }
 
@@ -961,6 +931,11 @@ img {
   font-weight: 600;
   text-align: center;
   margin-bottom: 15px;
+}
+
+.modal-label {
+  margin-bottom: 4px;
+  font-size: 32px;
 }
 
 .modal-input,

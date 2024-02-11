@@ -1,5 +1,3 @@
-// .footer {
-// }
 .footer-container {
   padding: 56px;
   display: flex;
@@ -19,13 +17,11 @@
   display: flex;
   align-items: center;
   gap: 40px;
-}
 
-.footer-list::before {
-  content: " ";
-  height: 1px;
-  width: 60px;
-  background-color: var(--title-light);
+  &::before {
+    content: " ";
+    height: 1px;
+    width: 60px;
+    background-color: var(--title-light);
+  }
 }
-// .footer-link {
-// }

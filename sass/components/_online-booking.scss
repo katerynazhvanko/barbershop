@@ -21,20 +21,19 @@
   font-weight: 600;
   font-size: 11px;
   color: var(--main-bg);
+
+  &:hover,
+  &:focus {
+    border-bottom: 1px solid var(--main-bg);
+    color: var(--main-bg);
+
+    &:hover::placeholder,
+    &:focus::placeholder {
+      color: var(--main-bg);
+    }
+  }
 }
-.online-booking-input:hover,
-.online-booking-input:focus,
-.online-booking-textarea:hover,
-.online-booking-textarea:focus {
-  border-bottom: 1px solid var(--main-bg);
-  color: var(--main-bg);
-}
-.online-booking-input:hover::placeholder,
-.online-booking-input:focus::placeholder,
-.online-booking-textarea:hover::placeholder,
-.online-booking-textarea:focus::placeholder {
-  color: var(--main-bg);
-}
+
 .online-booking-input {
   min-width: 270px;
   height: 24px;
@@ -44,8 +43,7 @@
 .name {
   margin-right: 30px;
 }
-// .phone {
-// }
+
 .message {
   min-width: 570px;
   height: 75px;

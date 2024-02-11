@@ -1,5 +1,3 @@
-// .hero {
-// }
 .hero-container {
   position: relative;
   display: flex;
@@ -18,15 +16,14 @@
   gap: 40px;
   transform: rotate(-90deg) translateY(100%); /*translateY щоб опустити на середину */
   transform-origin: bottom left; /* щоб поворот був не з центру, а з нижнього лівого кута */
+
+  &::before {
+    content: " ";
+    height: 1px;
+    width: 60px;
+    background-color: var(--title-light);
+  }
 }
-.hero-list::before {
-  content: " ";
-  height: 1px;
-  width: 60px;
-  background-color: var(--title-light);
-}
-// .hero-item {
-// }
 .hero-wrap {
   flex-grow: 1;
   padding: 272px 100px 208px 100px;
@@ -73,24 +70,26 @@
   letter-spacing: 1.1px;
 
   transition: color 250ms var(--animation);
-}
-.hero-switcher-item::after {
-  display: flex;
-  content: "";
-  width: 60px;
-  height: 1px;
-  background-color: var(--text-dark);
 
-  transition: background-color 250ms var(--animation);
+  &::after {
+    display: flex;
+    content: "";
+    width: 60px;
+    height: 1px;
+    background-color: var(--text-dark);
+
+    transition: background-color 250ms var(--animation);
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--main-bg);
+  }
+  &:hover::after,
+  &:focus::after {
+    background-color: var(--main-bg);
+  }
 }
 .right {
   text-align: right;
-}
-.hero-switcher-item:hover,
-.hero-switcher-item:focus {
-  color: var(--main-bg);
-}
-.hero-switcher-item:hover::after,
-.hero-switcher-item:focus::after {
-  background-color: var(--main-bg);
 }

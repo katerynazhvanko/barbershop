@@ -16,17 +16,19 @@
 
   transition: background-color 250ms var(--animation),
     border-color 250ms var(--animation);
-}
-.btn:hover,
-.btn:focus {
-  background-color: var(--hover);
-  border-color: transparent;
+
+  &:hover,
+  &:focus {
+    background-color: var(--hover);
+    border-color: transparent;
+  }
 }
 .btn-link {
   display: flex;
   justify-content: center;
   text-align: center;
   align-items: center;
+  margin-right: 15px;
 }
 .title {
   color: var(--title-light);
@@ -44,13 +46,14 @@
   font-size: 11px;
   font-weight: 600;
   text-transform: uppercase;
-}
-.suptitle::before {
-  margin-right: 20px;
-  content: " ";
-  height: 1px;
-  width: 60px;
-  background-color: currentColor;
+
+  &::before {
+    margin-right: 20px;
+    content: " ";
+    height: 1px;
+    width: 60px;
+    background-color: currentColor;
+  }
 }
 .soc-item {
   color: var(--title-light);
@@ -59,14 +62,15 @@
   letter-spacing: 2.2px;
 
   transition: color 250ms var(--animation);
-}
-.soc-item:hover,
-.soc-item:focus {
-  color: var(--hover);
-}
-.soc-item::before {
-  content: " ";
-  height: 1px;
-  width: 60px;
-  background-color: var(--title-light);
+
+  &:hover,
+  &:focus {
+    color: var(--hover);
+  }
+  &::before {
+    content: " ";
+    height: 1px;
+    width: 60px;
+    background-color: var(--title-light);
+  }
 }

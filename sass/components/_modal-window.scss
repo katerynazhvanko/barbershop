@@ -31,9 +31,11 @@
   background-color: transparent;
   fill: inherit;
   cursor: pointer;
-}
-.modal-close-btn:hover {
-  fill: var(--hover);
+
+  &:hover,
+  &:focus {
+    fill: var(--hover);
+  }
 }
 
 .modal-title {
@@ -42,7 +44,10 @@
   text-align: center;
   margin-bottom: 15px;
 }
-
+.modal-label {
+  margin-bottom: 4px;
+  font-size: 32px;
+}
 .modal-input,
 .modal-textarea {
   width: 100%;

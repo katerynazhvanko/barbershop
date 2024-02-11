@@ -18,12 +18,13 @@
   padding: 20px 24px;
   text-align: center;
   background-color: var(--second-bg);
-}
-.advantages-item:nth-child(odd) {
-  margin-right: 30px;
-}
-.advantages-item:nth-child(even) {
-  margin-top: 30px;
+
+  &:nth-child(odd) {
+    margin-right: 30px;
+  }
+  &:nth-child(even) {
+    margin-top: 30px;
+  }
 }
 .advantages-number {
   display: flex;
@@ -32,12 +33,13 @@
   font-size: 42px;
   font-weight: 700;
   letter-spacing: 2.1px;
-}
-.advantages-number::after {
-  content: "+";
-  color: var(--second-color-text);
-  font-size: 16px;
-  font-weight: 600;
+
+  &::after {
+    content: "+";
+    color: var(--second-color-text);
+    font-size: 16px;
+    font-weight: 600;
+  }
 }
 .advantages-plus {
   color: var(--second-color-text);
